@@ -9,7 +9,6 @@ public class Main {
 			if( count == 0 ) {
 				continue;
 			}
-			
 			System.out.print( i + " " );
 			
 			for( int j = 0; j < count; j++ ) {
@@ -21,6 +20,16 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
-		return 0;
+		int numberof369 = 0;
+		for (int res = number%10; number>0; res=number  % 10) { 
+			if(res == 3 || res == 6 || res == 9 )numberof369++; 
+			number= number/10; 
+			} 
+			return numberof369;
+			
+
+
 	}
 }
+
+
